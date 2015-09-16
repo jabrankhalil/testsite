@@ -1,0 +1,247 @@
+/*
+Theme Name: Pioneer-Cleaning
+Theme URI: #
+Author: the Junaid
+Author URI: #
+Description: The best theme for pioneer cleaning.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, blue, gray, pink, purple, white, yellow, dark, light, two-columns, left-sidebar, fixed-layout, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+Text Domain: twentyfifteen
+*/
+
+.navigation--main
+{
+    text-transform: uppercase;
+}
+
+.header .logo
+{
+    max-width: 240px;
+    padding: 20px;
+}
+
+.footer-bottom__right p
+{
+    margin-bottom: 0;
+}
+
+.top-spacing
+{
+    padding-top: 45px;
+}
+
+.sidebar .widget_nav_menu ul > li.current_page_item a
+{
+    text-decoration: none;
+
+    color: #333;
+    background: #f3bd09;
+}
+
+.why-choose-us h5
+{
+    color: #333;
+}
+
+.why-choose-us h5 .icon-container
+{
+    color: #fcc71f;
+}
+
+.related-content .page-box__picture img
+{
+    max-width: 100px;
+}
+
+.project-post
+{
+    margin-top: 26px;
+}
+
+.portfolio-mini-wrapper .widget-title
+{
+    text-align: center;
+
+    color: #fff;
+}
+
+.portfolio-mini-wrapper-gallery
+{
+    padding: 20px;
+}
+/*Custom styles*/
+.header
+{
+    background-color: #fff;
+}
+.navigation
+{
+    background: #454545;
+}
+.navigation--main > li > a
+{
+    color: #fff;
+}
+.navigation--main > li:hover > a
+{
+    color: #000;
+    background-color: rgba(255, 255, 255, .04);
+}
+
+.widget-icon-box .icon-box:hover .fa
+{
+    color: #e84c3d;
+}
+.social-icons__link
+{
+    color: #999;
+}
+.social-icons__link:hover
+{
+    color: #e74b3c;
+}
+.widget-icon-box .icon-box:hover .fa
+{
+    transition: all 200ms ease-out;
+
+    color: #e84c3d;
+}
+.navigation--main > li:hover > a
+{
+    padding-top: 24px;
+
+    color: #333;
+    border-top: 3px solid #e84c3d;
+}
+.footer-bottom
+{
+    color: #fff;
+    background-color: #e84c3d;
+}
+
+.footer-bottom a
+{
+    color: #cbcbcb;
+}
+.footer-bottom a:hover
+{
+    color: #fff;
+}
+
+.alternative-heading::after,
+.alternative-heading--404::after,
+.sidebar__headings::after,
+.footer .footer__headings::after,
+.jumbotron__category::after,
+.hentry__title::after,
+.panel-grid .widget-title::after,
+body.woocommerce-page div.product .woocommerce-tabs h2::after,
+body.woocommerce-page .short-description::after,
+body.woocommerce-page .cart-collaterals .cart_totals h2::after,
+body.woocommerce-page .cart-collaterals .shipping_calculator h2::after
+{
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+
+    width: 30px;
+    height: 3px;
+
+    content: '';
+
+    background-color: #e84c3d;
+}
+.logo-panel img:hover
+{
+    opacity: 1;
+    border: 1px solid #e84c3d;
+}
+.navigation--main > li > a
+{
+    padding-top: 24px;
+}
+.testimonial__quote::before
+{
+    background-color: #e84c3d;
+}
+.current-menu-item > a
+{
+    padding-top: 24px;
+
+    color: #000;
+    border-top: 3px solid #e84c3d;
+    background-color: rgba(255, 255, 255, .04);
+}
+li.current-menu-item > a
+{
+    color: #000;
+}
+li.current-menu-item:hover > a
+{
+    color: #000;
+}
+.jumbotron__category h6
+{
+    color: #e84c3d;
+}
+#comments-submit-button,
+.btn-primary
+{
+    color: #454545;
+    border-color: #e84c3d;
+    background: #e84c3d;
+}
+#comments-submit-button:hover,
+.btn-primary:hover
+{
+    color: #333;
+    border-color: #e84c3d;
+    background: #e84c3d;
+}
+
+.page-box__picture > img {
+  width: auto;
+  max-height: 300px;
+}
+.promobg .container {
+  width: 100%;
+}
+.hentry img {
+  border-radius: 2px;
+  width: auto;
+  max-height: 300px;
+  }
+  .siteorigin-panels-stretch.panel-row-style.testimonials-bg .container {
+  width: 100%;
+}
+
+/*@FIXME Not sure if this style is requred*/
+.testimonial__carousel {
+  float: right;
+  font-size: 38px;
+  border: 2px solid #dddddd;
+  border-radius: 2px;
+  margin-left: 10px;
+  height: 45px;
+  width: 45px;
+  text-align: center;
+  color: #999999;
+  transition: all 200ms ease-out;
+  position: absolute;
+  top: 225px;
+  right: 0;
+  z-index: 100;
+}
+.testimonial__carousel--right {
+  padding-right: 2px;
+  left: -55px;
+}
+.testimonial__carousel--left {
+  padding-left: 2px;
+  right: -45px;
+}
+.logo-panel img{
+    max-height: 90px;   
+}
