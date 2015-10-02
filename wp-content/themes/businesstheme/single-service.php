@@ -25,9 +25,10 @@ get_header();
 
                 <?php
                 $image = get_field('image', $value->ID);
+                
 
                 $profile_pic = wp_get_attachment_image_src($image['ID'],'single');
-
+               
                 ?>
 
                 <img class="servicess" src="<?php echo $profile_pic[0]; ?>" />
@@ -36,7 +37,7 @@ get_header();
             <div class="col-md-4">
 
                  <h4 class="service-heading"><?php echo get_the_title($value); ?></h4>
-
+                <p></p>    
                 <p class="text-muted"><?php the_field('description', $value->ID); ?></p>
 
             </div>

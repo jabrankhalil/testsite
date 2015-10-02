@@ -13,16 +13,17 @@ if ( ! function_exists( 'businesstheme' ) ) :
         add_theme_support( 'post-thumbnails' );
         //set_post_thumbnail_size( 255, 255, true );
         add_image_size( 'twentyfourteen-full-width', 1038, 576, true );
-        add_image_size( 'service-image',255,255,true);
+        add_image_size( 'service-image',355,255,true);
         add_image_size( 'portfolio-image',400 , 289,true);
         add_image_size( 'team-image',235 , 235,true);
         add_image_size( 'about-image',170 , 170,true);
-        add_image_size('single',300,500);
+        add_image_size('single',500,500);
 
         // This theme uses wp_nav_menu() in two locations.
         register_nav_menus( array(
-            'primary'   => __( 'Primary menu'),
-            'footer'    =>__('Footer menu'),
+            'primary'          => __( 'Primary menu'),
+            'footer'           =>__('Footer menu'),
+            'one page site'    =>__('One page site'),
 
         ) );
 
@@ -72,6 +73,7 @@ function theme_styles_js()
     wp_enqueue_style('business_front_page2'     ,'https://fonts.googleapis.com/css?family=Kaushan+Script');
     wp_enqueue_style('business_front_page3'     ,'https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic');
     wp_enqueue_style('business_front_page4'     ,'https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700');
+    wp_enqueue_style('mailchimp_css1'            ,'https://cdn-images.mailchimp.com/embedcode/classic-081711.css');
     wp_enqueue_style('style_css'                ,get_stylesheet_uri());
 
     //for script to include on condition we use declare global $wp_scripts and then use it ..
@@ -88,6 +90,10 @@ function theme_styles_js()
     wp_enqueue_script('jqBootstrapValidation_js',       get_template_directory_uri() . '/js/jqBootstrapValidation.js',                                      array('jquery', 'bootstrap_js', 'cdnjs', 'classie_js', 'abpAnimatedHeader_js'), '', true);
     wp_enqueue_script('contact_me_js',                  get_template_directory_uri() . '/js/contact_me.js',                                                 array('jquery', 'bootstrap_js', 'cdnjs', 'classie_js', 'abpAnimatedHeader_js', 'jqBootstrapValidation_js'), '', true);
     wp_enqueue_script('agency_js',                      get_template_directory_uri() . '/js/agency.js',                                                     array('jquery', 'bootstrap_js', 'cdnjs', 'classie_js', 'abpAnimatedHeader_js', 'jqBootstrapValidation_js', 'contact_me_js'), '', true);
+    wp_enqueue_script('mailchimp',                      'https:////s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js',                             array('jquery', 'bootstrap_js', 'cdnjs', 'classie_js', 'abpAnimatedHeader_js', 'jqBootstrapValidation_js', 'contact_me_js'), '', true);
+    wp_enqueue_script('mailchimp_js',                    get_template_directory_uri() .   'js/mailchimp.js',                             array('jquery','mailchimp'), '', true);
+    wp_enqueue_script('google_map_js',                  'https://maps.googleapis.com/maps/api/js',array('jquery'),'',true);
+    wp_enqueue_script('map_js',                         get_template_directory_uri().'/js/map.js',array('jquery','google_map_js'),'',true);
 
 
 }

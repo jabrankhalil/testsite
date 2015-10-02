@@ -10,6 +10,7 @@ $chunks=array_chunk($client,4);
 
 ?>
 <!-- Clients Aside -->
+<artical id="clients">
 <aside class="clients">
     <div class="container">
         <?php foreach($chunks as $post_chunk):?>
@@ -20,7 +21,7 @@ $chunks=array_chunk($client,4);
                 <?php
 
                         $client_img=get_post_thumbnail_id( $client_data->ID);
-                        $image_ID=wp_get_attachment_image_src($client_img,'thumbnail');
+                        $image_ID=wp_get_attachment_image_src($client_img,'medium');
                 ?>
                 <a href="#">
                     <img src="<?php echo $image_ID[0];?>" class="img-responsive img-centered" alt="">
@@ -32,3 +33,5 @@ $chunks=array_chunk($client,4);
         <?php endforeach;?>
     </div>
 </aside>
+<artical id="clients">
+   

@@ -34,7 +34,7 @@ function post_type()
         'has_archive' => false,
         'taxonomies' => array('category'),
         'rewrite' => array('slug' => 'services'),
-        'menu_icon' => 'dashicons-book',
+        'menu_icon' => 'dashicons-hammer',
         'supports' => array('title', 'editor', 'author','thumbnail'),
         'menu_position' => 5
     );
@@ -70,7 +70,7 @@ function post_type()
         'has_archive' => false,
         'taxonomies' => array('category'),
         'rewrite' => array('slug' => 'portfolios'),
-        'menu_icon' => 'dashicons-video-alt2',
+        'menu_icon' => 'dashicons-portfolio',
         'supports' => array('title', 'editor'),
         'menu_position' => 5
     );
@@ -140,7 +140,7 @@ function post_type()
         'hierarchical' => false,
         'has_archive' => false,
         'rewrite' => array('slug' => 'teams'),
-        'menu_icon' => 'dashicons-smiley',
+        'menu_icon' => 'dashicons-groups',
         'supports' => array('title', 'editor'),
         'menu_position' => 5
     );
